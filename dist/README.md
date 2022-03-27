@@ -1,37 +1,45 @@
-# test
 
-## Table-of-Contents
+  # test
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
+  [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-- [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
-- [Questions](#questions)
+  ## Table-of-Contents
 
-## Description
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [How to Contribute](#how-to-contribute)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-test
+  ## Description
 
-## Installation
+  test
 
-test
+  ## Installation
 
-## Usage
+  test
 
-test
+  ## Usage
 
-## How to Contribute
+  test
 
-test
+  
+  ## License
+  The application is covered under the following license: [GNU LGPLv3](https://www.gnu.org/licenses/lgpl-3.0)
+    
 
-## Tests
+  ## How to Contribute
 
-test
+  test
 
-## Questions
+  ## Tests
+  
+  test
 
-GitHub: [test](https://github.com/test)
+  ## Questions
 
-Email: [test](mailto:test)
+  GitHub: [test](https://github.com/test)
+  
+  Email: [test](mailto:test)

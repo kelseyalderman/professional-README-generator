@@ -60,10 +60,8 @@ function renderLicenseSection(license) {
 // Function that returns license in table of contents
 // If there is no license, return an empty string
 function renderLicenseTOC(license) {
-  if (license === "GNU AGPLv3") {
-    return `
-  * [License](#license)
-    `;
+  if (license !== "No lincense") {
+    return `* [License](#license)`;
   } else {
     return " ";
   }
