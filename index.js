@@ -89,12 +89,6 @@ const questions = [
   },
   // License
   {
-    type: "confirm",
-    name: "confirmLicense",
-    message: "Would you like to include a license for your project?",
-    default: false,
-  },
-  {
     type: "list",
     name: "license",
     message: "Select the license for your project.",
@@ -106,8 +100,8 @@ const questions = [
       "MIT",
       "Apache",
       "Boost",
+      "No license",
     ],
-    when: ({ confirmLicense }) => confirmLicense,
   },
   // Github Username
   {
