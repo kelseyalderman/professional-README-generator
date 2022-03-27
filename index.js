@@ -9,7 +9,7 @@ const questions = [
   {
     type: "input",
     name: "title",
-    massage: "What is the title of the project? (Required)",
+    message: "What is the title of the project? (Required)",
     validate: (titleInput) => {
       if (titleInput) {
         return true;
@@ -136,10 +136,41 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (fileContent) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./dist/README.md", fileContent, (err) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: "README.md created!",
+      });
+    });
+  });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+  return inquirer.prompt(questions).then((readmeData) => {
+    return readmeData;
+  });
+};
 
 // Function call to initialize app
-init();
+init()
+  .then((readmeData) => {
+    console.log(readmeData);
+    return generateMarkdown(readmeData);
+  })
+  .then((pageMD) => {
+    return writeToFile(pageMD);
+  })
+  .then((writeToFileResponse) => {
+    console.log(writeToFileResponse);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
