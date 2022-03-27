@@ -9,7 +9,7 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is the title of the project? (Required)",
+    message: "What is the title of the project?",
     validate: (titleInput) => {
       if (titleInput) {
         return true;
@@ -23,12 +23,12 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Provide a description of the project (Required)",
+    message: "Provide a description of the project.",
     validate: (descriptionInput) => {
       if (descriptionInput) {
         return true;
       } else {
-        console.log("Please enter a project description!");
+        console.log("Please provide a project description!");
         return false;
       }
     },
@@ -37,12 +37,12 @@ const questions = [
   {
     type: "input",
     name: "installation",
-    message: "What are the steps required to install your project? (Required)",
+    message: "What are the steps required to install your project?",
     validate: (installationInput) => {
       if (installationInput) {
         return true;
       } else {
-        console.log("Please enter installation instructions!");
+        console.log("Please provide installation instructions!");
         return false;
       }
     },
@@ -51,7 +51,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Provide instructions and examples for use (Required)",
+    message: "Provide instructions and examples for use.",
     validate: (usageInput) => {
       if (usageInput) {
         return true;
@@ -65,7 +65,7 @@ const questions = [
   {
     type: "input",
     name: "contribution",
-    message: "Provide guidelines for how to contribute to the project:",
+    message: "Provide guidelines for how to contribute to the project.",
     validate: (contributionInput) => {
       if (contributionInput) {
         return true;
@@ -79,7 +79,7 @@ const questions = [
   {
     type: "input",
     name: "tests",
-    message: "Provide instructionson how to test this project:",
+    message: "Provide instructions on how to test this project.",
     validate: (testsInput) => {
       if (testsInput) {
         return true;
@@ -109,7 +109,7 @@ const questions = [
   {
     type: "input",
     name: "github",
-    message: "Enter your GitHub Username (Required)",
+    message: "Enter your GitHub Username.",
     validate: (githubInput) => {
       if (githubInput) {
         return true;
@@ -123,7 +123,7 @@ const questions = [
   {
     type: "input",
     name: "email",
-    message: "Enter your email address (Required)",
+    message: "Enter your email address.",
     validate: (emailInput) => {
       if (emailInput) {
         return true;
