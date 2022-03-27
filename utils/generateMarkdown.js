@@ -23,8 +23,20 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== "No license") {
-    return `[${license}](https://choosealicense.com/licenses/${license})`;
+  if (license === "GNU AGPLv3") {
+    return `https://www.gnu.org/licenses/agpl-3.0`;
+  } else if (license === "GNU GPLv3") {
+    return `https://www.gnu.org/licenses/gpl-3.0`;
+  } else if (license === "GNU LGPLv3") {
+    return `https://www.gnu.org/licenses/lgpl-3.0`;
+  } else if (license === "Mozilla") {
+    return `https://opensource.org/licenses/MPL-2.0`;
+  } else if (license === "MIT") {
+    return `https://opensource.org/licenses/MIT`;
+  } else if (license === "Apache") {
+    return `https://opensource.org/licenses/Apache-2.0`;
+  } else if (license === "Boost") {
+    return `https://www.boost.org/LICENSE_1_0.txt`;
   } else {
     return "";
   }
@@ -35,11 +47,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "No license") {
     return `
-    ## [License](#table-of-contents)
-
-    The application is covered under the following license:
-
-    ${renderLicenseLink(license)}
+  ## License
+  The application is covered under the following license: [${license}](${renderLicenseLink(
+      license
+    )})
     `;
   } else {
     return "";
@@ -49,7 +60,7 @@ function renderLicenseSection(license) {
 // Function that returns license in table of contents
 // If there is no license, return an empty string
 function renderLicenseTOC(license) {
-  if (license !== "no license") {
+  if (license === "GNU AGPLv3") {
     return `
   * [License](#license)
     `;
@@ -100,6 +111,7 @@ function generateMarkdown(data) {
   ## Questions
 
   GitHub: [${data.github}](https://github.com/${data.github})
+  
   Email: [${data.email}](mailto:${data.email})
 `;
 }
