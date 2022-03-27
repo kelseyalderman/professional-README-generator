@@ -63,29 +63,31 @@ const questions = [
   },
   // How To Contribute
   {
-    type: "confirm",
-    name: "confirmContribution",
-    message: "Would you like to include contribution guidelines?",
-    default: true,
-  },
-  {
     type: "input",
     name: "contribution",
     message: "Provide guidelines for how to contribute to the project:",
-    when: ({ confirmContribution }) => confirmContribution,
+    validate: (contributionInput) => {
+      if (contributionInput) {
+        return true;
+      } else {
+        console.log("Please provide guidelines for contributing!");
+        return false;
+      }
+    },
   },
   // Tests
-  {
-    type: "confirm",
-    name: "confirmTests",
-    message: "Would you like to include test instructions?",
-    default: true,
-  },
   {
     type: "input",
     name: "tests",
     message: "Provide instructionson how to test this project:",
-    when: ({ confirmTests }) => confirmTests,
+    validate: (testsInput) => {
+      if (testsInput) {
+        return true;
+      } else {
+        console.log("Please provide test instructions!");
+        return false;
+      }
+    },
   },
   // License
   {
