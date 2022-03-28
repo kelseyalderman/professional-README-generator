@@ -60,10 +60,10 @@ function renderLicenseSection(license) {
 // Function that returns license in table of contents
 // If there is no license, return an empty string
 function renderLicenseTOC(license) {
-  if (license !== "No lincense") {
+  if (license !== "No license") {
     return `* [License](#license)`;
   } else {
-    return " ";
+    return "";
   }
 }
 

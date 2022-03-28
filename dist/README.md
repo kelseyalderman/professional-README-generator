@@ -1,47 +1,44 @@
 
-  # Test
+  # test
 
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  
 
   ## Table-of-Contents
 
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  
   * [How to Contribute](#how-to-contribute)
   * [Tests](#tests)
   * [Questions](#questions)
 
   ## Description
 
-  Test
+  test
 
   ## Installation
 
-  Test
+  test
 
   ## Usage
 
-  Test
+  test
 
   
-  ## License
-  The application is covered under the following license: [Mozilla](https://opensource.org/licenses/MPL-2.0)
-    
 
   ## How to Contribute
 
-  Test
+  test
 
   ## Tests
   
-  Test
+  tes
 
   ## Questions
 
   Feel free to reach out with any questions!
 
-  GitHub: [Test](https://github.com/Test)
+  GitHub: [test](https://github.com/test)
   
-  Email: [Test](mailto:Test)
+  Email: [test](mailto:test)
